@@ -1,0 +1,19 @@
+.main-page{
+  display: flex;
+  flex-flow: column wrap; 
+}
+.header{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(137, 32, 137);
+}
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  align-content: space-between;
+}
+.sidebar1 > div{
+  padding: '30px'  ;
+}
