@@ -66,7 +66,7 @@ export default function Creatingmeme(){
                 color:'whitesmoke',
                 fontSize:'50px',
             }}>{form.lastName}</p>
-                <img src={form.randomImg} style={{width:'40%'}}></img>
+                <img src={form.randomImg} style={{maxWidth:'40%',height: '40%'}} />
                 <button onClick={handleClick}>click to get AN IMAGE</button>
             </div>
         </div>
