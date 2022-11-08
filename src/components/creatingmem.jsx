@@ -23,7 +23,15 @@ export default function Creatingmeme(){
             randomImg: url
         }))
     }
-    
+    function handleChange(e){
+        let x=e.target.value.toString();
+        let y=x.toString();
+        setForm({
+                ...form,
+                randomImg: x
+            })
+        
+    }
     return(
         <>
         <div style={{display: 'flex',flexDirection:'column'}} className='memeclass' >
@@ -68,6 +76,7 @@ export default function Creatingmeme(){
                 fontSize:'50px',
             }}>{form.lastName}</p>
                 <img src={form.randomImg} width={500} height={450} />
+                <input type='file' onChange={handleChange} />
                 <button onClick={handleClick} style={{backgroundColor: "red",marginBottom:'50px',color: 'whitesmoke',padding:'10px',border:'none',borderRadius:'5px'}}>click to get AN IMAGE</button>
             </div>
         </div>
