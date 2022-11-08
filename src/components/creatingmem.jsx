@@ -6,7 +6,7 @@ export default function Creatingmeme(){
         firstName:'',
         middleName:'',
         lastName:'',
-        randomImg:'https://i.imgflip.com/30b1gx.jpg'
+        randomImg:'https://i.imgflip.com/40b1gx.jpg'
     });
     const [img,setImg]=useState([]);
     useEffect(()=>{
@@ -26,7 +26,7 @@ export default function Creatingmeme(){
     
     return(
         <>
-        <div style={{}} >
+        <div style={{display: 'flex',flexDirection:'column'}} className='memeclass' >
             <div>
             <form>
                 <label>First field:
@@ -42,7 +42,8 @@ export default function Creatingmeme(){
             </form>
             </div>
             <div style={{
-                position: 'relative'
+                position: 'relative',
+                fontFamily:'monospace'
             }}>
                 <p style={{
                 position: 'absolute',
@@ -66,8 +67,8 @@ export default function Creatingmeme(){
                 color:'whitesmoke',
                 fontSize:'50px',
             }}>{form.lastName}</p>
-                <img src={form.randomImg} style={{maxWidth:'40%',height: '40%'}} />
-                <button onClick={handleClick}>click to get AN IMAGE</button>
+                <img src={form.randomImg} width={500} height={450} />
+                <button onClick={handleClick} style={{backgroundColor: "red",marginBottom:'50px',color: 'whitesmoke',padding:'10px',border:'none',borderRadius:'5px'}}>click to get AN IMAGE</button>
             </div>
         </div>
         </>
