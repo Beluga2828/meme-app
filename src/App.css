@@ -1,23 +1,243 @@
-.main-page{
-  display: flex;
-  flex-flow: column wrap; 
+
+.img4{
+  width: 40%;
 }
 .header{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(137, 32, 137);
+  background-image:linear-gradient(rgb(137, 32, 137,0.8),rgb(85, 186, 226));
 }
 .flex-container{
   display: flex;
   flex-flow: row wrap;
-  align-content: space-between;
+}  
+.sidebar1{
+  width: 20%;
+  height: auto;
+}
+.content{
+  width: 80%;
 }
 .sidebar2 > div {
-  padding: 10px;
-  
+  padding: 20px 40px;
+  font-size: large;
+  font-weight: bold;
+  color: blue;
+}
+.sidebar2 > div:hover{
+  background-color: rgb(210, 210, 220);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+.memeclass{
+  display: flex;
+  flex-flow: row wrap;
 }
 .memeclass > div {
-  padding: 10px;
+  width: 40%;
+}
+.imgClass{
+  width: 100%;
+  padding: 2px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.image-class > p{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-weight:bolder;
+  font-size: small;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 30px;
+}
+.list1 > li{
+  list-style-type: none;
+  padding: 10px 30px;
+}
+.backgroundImg1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vmax;
+  background-image: url('./images/3nofjx.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  box-sizing: border-box;
+}
+.form2{
+  box-shadow:  20px 20px 20px 20px rgba(0, 0, 0, 0.19);
+  background-color: rgba(98, 105, 178, 0.4);
+  color: rgb(8, 8, 8,0.9);
+  font-size: large;
+  font-weight: bold;
+  border-radius: 15px;
+  margin-top: 280px;
+  margin-left: 180px;
+}
+.button1{
+  border:  none;
+  width: 100px;
+  font-weight: bolder;
+  border-radius: 15px;
+  background-color: rgb(235, 17, 17,0.7);
+  color: rgb(255, 255, 255,0.6);
+  padding: 8px;
+  margin-left: 50px;
+}
+*{
+  box-sizing: border-box;
+}
+input[type= 'text']{
+  border: none;
+  width: 300px;
+border: 2px solid rgb(39, 163, 177);
+border-radius: 4px;
+padding: 5px 20px;
+box-sizing: border-box;
+margin: 20px 10px;
+}
+input[type= 'email']{
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 5px;
+}
+input[type= 'password']{
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 10px;
+}
+.button2:hover{
+  background-color: rgb(55, 180, 229);
+  color: aliceblue;
+  cursor: pointer;
+}
+.button4{
+  background-color: navy;
+  margin:10px;
+  cursor: pointer;
+  color: whitesmoke;
+  padding:8px 25px;
+  border:none;
+  border-radius:10px
+}
+.button3 :hover{
+  background-color: rgb(241, 11, 11);
+  color: aliceblue;
+}
+input[type='file']{
+  border: none;
+  text-decoration: none;
+}
+@media only screen and (max-width: 768px){
+  .header,.content,.flex-container,.memeclass{
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+  }
+  .memeclass>div{
+    margin: 10px;
+    width: 95%;
+  }
+  .img4{
+    width: 100%;
+  }
+  .button1{
+    padding: 10px;
+    background-color: navy;
+    color: white;
+  }
+  .sidebar1{
+    width: 100%;
+  }
+  .sidebar2>div{
+    width: 50%;
+    float: left;
+    padding: 10px;
+  }
+  input[type='text']{
+    width:60%;
+    margin-top: 0px;
+  }
+  .button4{
+    margin-left: 10px;
+  }
+  .imgClass{
+    clear: left;
+    width: 100%;
+    height: auto;
+  }
+  .backgroundImg1{
+    background-image: url('./images/download1.jpg');
+    height: 100vmax;
+    width: 100%;
+  }
+  .form2{
+    margin: 0px;
+    background-color: rgba(6, 168, 255, 0.4);
+    text-shadow: 5px 5px 5px rgb(9, 4, 4);
+    color: rgb(255, 255, 255);
+    font-size: larger;
+    font-weight: bolder;
+    padding: 0px;
+  }
+  input[type='email'],input[type='password']{
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 1200px)  {
+  *{
+    box-sizing: border-box;
+  }
+  .backgroundImg1{
+    width: 100%;
+    height: 100vmax;
+  }
+  .form2{
+    width: 45%;
+    height: 45%;
+   padding: 60px;
+   margin-top: 35%;
+  }
+  .list1>li{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-top: 15px;
+    color:rgba(255, 255, 255);
+    text-shadow: 5px 5px 5px rgb(9, 10, 9);
+  }
+  input[type='email'],input[type='password']{
+    padding: 10px;
+    width: 350px;
+    border-radius: 80px;
+  }
+  .button1{
+    width: 60%;
+    padding: 5px 40px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 3px 3px 2px rgb(139, 136, 136);
+    margin-left: 55px;
+  }
+ .flex-container{
+   min-height: 577px;
+  }
+  .imgClass{
+    width: 100%;
+    height: 560px;
+  }
+  .memeclass>div{
+    width: 47%;
+  }
+  input[type='text']{
+    width:400px;
+  }
+  .form3{
+    margin-left: 50px;
+    margin-top: 50px;
+  }
 }
