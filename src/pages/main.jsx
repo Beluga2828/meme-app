@@ -10,12 +10,15 @@ export default function Main(){
         <div className="main-page">
             <div className="header"><Header /></div>
             <div className="flex-container">
-                <div style={{flex: '18%',
-                             backgroundColor:'purple',
+                <div style={{
+                            // flexBasis:'18%',
+                             backgroundImage:'linear-gradient(to right ,purple,skyblue)',
                              alignContent: 'space-between'
                             }}
                             className='sidebar1'><Sidebar  /></div>
-                <div style={{flex: '82%'}} className='content'><Outlet /></div>
+                <div  style={{
+                   // flexBasis:'72%'
+                    }} className='content'><Outlet /></div>
             </div>
         </div>
         </>
